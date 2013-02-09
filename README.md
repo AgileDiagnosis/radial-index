@@ -12,15 +12,12 @@ Compute radial order indices from unordered Cartesian coordinates relative to th
 ## Basic usage
 
     $ var ri = require('radial-index')
-
     $ var points = [
         [-10, -26],
         [-11, 18],
         [11, 27]
       ];
-
     $ console.log(ri.getIndicesFromPoints(points));
-
     [1, 2, 0]
 
 Note that the response array provides the indices in the same sequence as the original points argument.
@@ -45,16 +42,15 @@ Note that the response array provides the indices in the same sequence as the or
 
              [y]
            (0, 100)
-
               |
               |  A
               |
-    ----------+----------  (100, 0) [x]
+    ----------+---------- (100, 0) [x]
      C        |
               |     B
               |
 
-For the following examples, assume that `A` = [A.x, A.y], B = [B.x, B.y], etc. By default, `getIndicesFromPoints([A, B, C])` would return `[0, 1, 2]` because the indexer would start from [y] and sweep clockwise hitting A, then B, then C. That is:
+For the following examples, assume that `A` = [A.x, A.y], `B` = [B.x, B.y], etc. By default, `getIndicesFromPoints([A, B, C])` would return `[0, 1, 2]` because the indexer would start from [y] and sweep clockwise hitting A, then B, then C. That is:
 
     $ ri.getIndicesFromPoints([A, B, C])
     [0, 1, 2]
