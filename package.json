@@ -1,0 +1,27 @@
+{
+  "name": "radial-index",
+  "version": "0.0.1",
+  "description": "compute radial order indices from unordered Cartesian coordinates relative to the origin or a specified point",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "0.9.0"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgileDiagnosis/radial-index"
+  },
+  "keywords": [
+    "coordinate",
+    "radian",
+    "arctan"
+  ],
+  "author": "Agile Diagnosis <hello@agilediagnosis.com>",
+  "contributors": [
+    "kurttheviking <kurt@agilediagnosis.com"
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
