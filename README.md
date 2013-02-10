@@ -75,7 +75,7 @@ Other examples:
 
 ## Cautions
 
-Calculating the radial component of a polar coordinate relies on trignometric functions that often produce extended floating point numbers. The accuracy of indexing is therefore subject to JavaScript's floating point precision limitations. For general information about floating point issues, see [the floating point guide](https://github.com/brazzy/floating-point-gui.de).
+Calculating the radial component of a polar coordinate relies on trignometric functions that often produce extended floating point numbers. The accuracy of indexing is therefore subject to JavaScript's floating point precision limitations. For general information about floating point issues see [the floating point guide](https://github.com/brazzy/floating-point-gui.de).
 
 
 ## Contributors
