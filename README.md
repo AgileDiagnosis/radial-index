@@ -1,8 +1,6 @@
 radial-index
 ============
 
-## tl;dr
-
 Compute radial order indices from unordered Cartesian coordinates relative to the origin or a specified point.
 
 ## Install
