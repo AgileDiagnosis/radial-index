@@ -32,4 +32,10 @@ options.center = [-500, -500];
 result = ri.getIndicesFromPoints(points, options);
 assert.equal(result.toString(), [1, 2, 0].toString(), 'index from [-500, -500]');
 
+options = {};
+options.ccw = true;
+options.rotate = 270 + 360;
+result = ri.getIndicesFromPoints(points, options);
+assert.equal(result.toString(), [2, 1, 0].toString(), 'counter-clockwise indexing, over-rotated 270 (+360) degrees');
+
 console.log('all tests pass');
