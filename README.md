@@ -23,7 +23,7 @@ Note that the response array provides the indices in the same sequence as the or
 
 ## Options
 
-`getIndicesFromPoints` optionally takes a configuration object as its second argument. That configuration object can provide provides three additional parameters to `getIndicesFromPoints`.
+`getIndicesFromPoints` optionally takes a configuration object as its second argument. That configuration object provides three additional parameters to `getIndicesFromPoints`.
 
 
     {

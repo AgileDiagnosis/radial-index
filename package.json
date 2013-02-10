@@ -1,6 +1,6 @@
 {
   "name": "radial-index",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "compute radial order indices from unordered Cartesian coordinates relative to the origin or a specified point",
   "main": "index.js",
   "dependencies": {
@@ -20,7 +20,7 @@
   ],
   "author": "Agile Diagnosis <hello@agilediagnosis.com>",
   "contributors": [
-    "kurttheviking <kurt@agilediagnosis.com"
+    "agilekurt <kurt@agilediagnosis.com>"
   ],
   "license": "MIT",
   "readmeFilename": "README.md"
