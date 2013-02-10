@@ -8,6 +8,7 @@ var c = [-90, -10];
 var points = [a, b, c];
 var result = [];
 var options = {};
+var testFn;
 
 result = ri.getIndicesFromPoints(points);
 assert.equal(result.toString(), [0, 1, 2].toString(), 'general case, no options given');
@@ -38,4 +39,19 @@ options.rotate = 270 + 360;
 result = ri.getIndicesFromPoints(points, options);
 assert.equal(result.toString(), [2, 1, 0].toString(), 'counter-clockwise indexing, over-rotated 270 (+360) degrees');
 
-console.log('all tests pass');
+testFn = function() {
+  ri.getIndicesFromPoints();
+};
+assert.throws(testFn, TypeError, 'throws type error when no points argument provided');
+
+testFn = function() {
+  ri.getIndicesFromPoints([[10, 10], 5]);
+};
+assert.throws(ri.getIndicesFromPoints, TypeError, 'throws type error when an argument element is not an array');
+
+testFn = function() {
+  ri.getIndicesFromPoints(points, {rotate: 'b'});
+};
+assert.throws(ri.getIndicesFromPoints, TypeError, 'throws type error when optional rotate param is not a number');
+
+console.log('SUCCESS: tests passed');
