@@ -33,7 +33,7 @@ Note that the response array provides the indices in the same sequence as the or
     }
 
 
-`center` defaults origin [0, 0]. By default `getIndicesFromPoints` indexes points in a [clockwise fashion](http://en.wikipedia.org/wiki/Clockwise) starting from the positive y-axis: start at the 12 o'clock position moving to the right. Any truthy value set to `ccw` reverses this indexing movement. `rotate` controls the angle from which the indexing movement should begin--by default, the positive y-axis. Setting `rotate` to 90, for example, would start the indexing at the positive x-axis instead.
+`center` is set to the origin [0, 0] unless otherwise specified. Also by default, `getIndicesFromPoints` indexes points in a [clockwise fashion](http://en.wikipedia.org/wiki/Clockwise) starting from the positive y-axis as follows: start at the 12 o'clock position moving to the right. To override this behavior and rotate in a counter-clockwise fashion, set `ccw` to `true`. Finally, `rotate` controls the angle from which the indexing movement should begin--by default, the positive y-axis. Setting `rotate` to 90, for example, would start the indexing at the positive x-axis instead.
 
 
 ## Examples
