@@ -4,7 +4,7 @@ radial-index
 Compute radial order indices from unordered Cartesian coordinates relative to the origin or a specified point.
 
 
-## Use
+### Use
 
     $ var ri = require('radial-index')
     $ var points = [
@@ -18,7 +18,7 @@ Compute radial order indices from unordered Cartesian coordinates relative to th
 Note that the response array provides the indices in the same sequence as the original points argument.
 
 
-## Options
+### Options
 
 `getIndicesFromPoints` optionally takes a configuration object as its second argument. That configuration object provides three additional parameters to `getIndicesFromPoints`.
 
