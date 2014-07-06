@@ -1,6 +1,6 @@
 {
   "name": "radial-index",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "compute radial order indices from unordered Cartesian coordinates relative to the origin or a specified point",
   "main": "index.js",
   "dependencies": {
