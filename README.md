@@ -3,11 +3,8 @@ radial-index
 
 Compute radial order indices from unordered Cartesian coordinates relative to the origin or a specified point.
 
-## Install
 
-    npm install radial-index
-
-## Basic usage
+## Use
 
     $ var ri = require('radial-index')
     $ var points = [
@@ -36,7 +33,7 @@ Note that the response array provides the indices in the same sequence as the or
 `center` is set to the origin [0, 0] unless otherwise specified. Also by default, `getIndicesFromPoints` indexes points in a [clockwise fashion](http://en.wikipedia.org/wiki/Clockwise) starting from the positive y-axis (start at the 12 o'clock position moving to the right). To override this behavior and rotate in a counter-clockwise fashion, set `ccw` to `true`. Finally, `rotate` controls the angle from which the indexing movement should begin--by default, the positive y-axis. Setting `rotate` to 90, for example, would start the indexing at the positive x-axis instead.
 
 
-## Examples
+### Examples
 
              [y]
            (0, 100)
@@ -68,22 +65,16 @@ Other examples:
     [1, 2, 0]
 
 
-## Tests
+### Install
+
+    npm install radial-index
+
+
+### Test
 
     npm test
 
 
-## Cautions
+### Caveat emptor
 
 Calculating the radial component of a polar coordinate relies on trignometric functions that often produce extended floating point numbers. The accuracy of indexing is therefore subject to JavaScript's floating point precision limitations. For general information about floating point issues see [the floating point guide](https://github.com/brazzy/floating-point-gui.de).
-
-
-## Contributors
-
-- [kurttheviking](https://github.com/kurttheviking)
-
-
-## License
-
-&copy; 2013 Agile Diagnosis, Inc
-[MIT](https://github.com/AgileDiagnosis/radial-index/LICENSE.md)
